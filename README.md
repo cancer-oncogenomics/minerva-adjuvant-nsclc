@@ -15,9 +15,3 @@ All analysis are running under R version 3.5.0
 
 ## data
 multigene-171_combined.csv -- data used for survival analysis and MINERVA construction.
-
-cross_validation_score_prediction.csv -- results of cross validation.
-
-loocv_score_prediction.csv -- results of leave one out cross validation.
-
-p_value_for_treatment_interaction_test.csv -- data used for visualize results of cross validation.
