@@ -19,7 +19,6 @@ for(i in 1:dim(cox_result)[1]){
   if(i%%3==0){idx=c(idx,i)} 
 }
 new_cox_result=cox_result[idx,]
-new_cox_result[,adjPval:=p.adjust(p = new_cox_result$`Pr(>|z|)`, method = 'fdr')]
 mark <- new_cox_result[which(as.numeric(as.character(new_cox_result[,5]))<=0.05), ]
 write.csv(mark, file="output/cox.interaction.filter0.05.csv",row.names = F,quote = F)
 
