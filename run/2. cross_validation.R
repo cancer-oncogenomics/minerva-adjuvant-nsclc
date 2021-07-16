@@ -35,7 +35,6 @@ for (b in 1:100)
   cox_result<-do.call(rbind,uni_cox)
   cox_result<-na.omit(cox_result)
   tmp<-cox_result[ cox_result[,5]<0.05,c(1,4,5,6)]
-  # cox_result<-cbind(cox_result,p.adjust(cox_result[,5],method="fdr"))
   # tmp<-cox_result[cox_result[,7]<0.1 & cox_result[,5]<0.01,c(1,4,5,6)]
   
   if(nrow(tmp)>0){
